@@ -1,7 +1,7 @@
 version: 2026.232.0520
 gogcli:
     candy:
-        version: 2026.144.1443
+        version: 2026.243.0100
         description: |
             Installs the gog Google Workspace CLI (Gmail, Calendar, Drive, Contacts, Sheets, Docs) into the user's Go bin
             gogcli builds the upstream `gog` binary from
@@ -13,7 +13,7 @@ gogcli:
             is verifiable at build scope; live Workspace access additionally
             needs OAuth credentials provisioned at deploy time.
         require:
-            - '@github.com/opencharly/layer-golang:v2026.235.2057'
+            - '@github.com/opencharly/layer-golang:v2026.239.1614'
         env:
             GOPATH: "~/go"
         path_append:
