@@ -1,11 +1,11 @@
 version: 2026.232.0520
 gogcli:
     candy:
-        version: 2026.243.0100
+        version: 2026.246.0100
         description: |
             Installs the gog Google Workspace CLI (Gmail, Calendar, Drive, Contacts, Sheets, Docs) into the user's Go bin
             gogcli builds the upstream `gog` binary from
-            github.com/steipete/gogcli via `go install`, landing it at
+            github.com/openclaw/gogcli via `go install`, landing it at
             ~/go/bin/gog (placed on PATH by path_append). `gog` is a single
             static Go binary that exposes the Google Workspace APIs as
             subcommands (gmail, calendar, drive, ...). `gog --version` and
@@ -20,11 +20,11 @@ gogcli:
             - "~/go/bin"
         plan:
             - run: |
-                command=go install github.com/steipete/gogcli/cmd/gog@latest
+                command=go install github.com/openclaw/gogcli/cmd/gog@latest
                 go clean -cache
               run_as: "${USER}"
               command: |
-                go install github.com/steipete/gogcli/cmd/gog@latest
+                go install github.com/openclaw/gogcli/cmd/gog@latest
                 go clean -cache
             - check: the gog binary is installed at ~/go/bin/gog
               file:
