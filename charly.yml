@@ -1,7 +1,5 @@
-version: 2026.232.0520
 gogcli:
     candy:
-        version: 2026.246.0100
         description: |
             Installs the gog Google Workspace CLI (Gmail, Calendar, Drive, Contacts, Sheets, Docs) into the user's Go bin
             gogcli builds the upstream `gog` binary from
